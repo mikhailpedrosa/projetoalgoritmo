@@ -1,0 +1,20 @@
+
+public class Main {
+	public static int[] vetor = {56, 446, 389, 18, 446, 17, 493, 186, 455,
+        94, 374, 119, 81, 250, 496, 84, 129, 73, 414, 156, 199, 84, 17, 16, 56};
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    // TODO code application logic here
+		
+		MergeSort merge = new MergeSort ();
+		
+	    System.out.print("Vetor de Entrada: ");
+	    merge.imprime(vetor);
+	    merge.merge(0, vetor.length - 1);
+	    System.out.print("\nVetor Ordenado: ");
+	    merge.imprime(vetor);
+	    
+	}
+
+}

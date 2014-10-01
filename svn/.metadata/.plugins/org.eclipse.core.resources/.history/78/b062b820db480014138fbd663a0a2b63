@@ -1,0 +1,51 @@
+
+public class MergeSort {
+	    
+	    // @param args the command line arguments
+	     
+	    public static int[] vetor = {56, 446, 389, 18, 446, 17, 493, 186, 455,
+	        94, 374, 119, 81, 250, 496, 84, 129, 73, 414, 156, 199, 84, 17, 16, 56};
+
+	    public static void imprime(int[] aux) {
+	        for (int i = 0; i &lt; vetor.length; i++) {
+	            System.out.print(" " + aux[i]);
+	        }
+	    }
+	    
+	     // Método recursivo que divide o vetor em dois e depois os mescla e ordena
+	    public static void merge(int inicio, int fim) {
+	        if (inicio &lt; fim) {
+	            int meio = (inicio + fim) / 2;
+	            merge(inicio, meio);
+	            merge(meio + 1, fim);
+	            mesclar(inicio, meio, fim);
+	        }
+	    }
+
+	    // Ordena dois trechos ordenados e adjacente de vetores e ordena-os conjuntamente
+	    public static void mesclar(int inicio, int meio, int fim1) {
+	        int tamanho = fim1 - inicio + 1;
+	        
+	        // Inicialização de um vetor temporario para auxiliar na ordenação O vetor temporário é uma cópia do trecho que será ordenado
+	         
+	        int[] temp = new int[tamanho];
+	        for (int posicao = 0; posicao &lt; tamanho; posicao++) {
+	            temp[posicao] = vetor[inicio + posicao];
+	        }
+	        
+	         // Laço para ordenação do vetor, utilizando o vetor temporário, usando índices i e j para cada trecho de vetor da mesclagem<br />
+	        int i = 0;
+	        int j = meio - inicio + 1;
+	        //A depender das condições, recebe um elemento de um trecho ou outro
+	        for (int posicao = 0; posicao &lt; tamanho; posicao++) {
+	            vetor[inicio + posicao] =
+	                    (j &lt;= tamanho - 1)
+	                    ? ((i &lt;= meio - inicio)
+	                    ? (temp[i] &lt; temp[j])
+	                    ? temp[i++]
+	                    : temp[j++]
+	                    : temp[j++])
+	                    : temp[i++];
+	        }
+	    }
+	}

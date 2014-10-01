@@ -1,0 +1,31 @@
+
+public class Main {
+	public static int[] vetorMerge = {56, 446, 389, 18, 446, 17, 493, 186, 455,
+        94, 374, 119, 81, 250, 496, 84, 129, 73, 414, 156, 199, 84, 17, 16, 56};
+	
+	public static int[] vetorBolha = {44, 346, 379, 8, 546, 99, 193, 86, 45,
+        4, 34, 19, 84, 25, 0, 1, 100, 20, 999, 186, 129, 8, 11, 14, 66};
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    // TODO code application logic here
+		
+		BolhaSort bolha = new BolhaSort();
+		MergeSort merge = new MergeSort ();
+		
+		
+	    System.out.print("Vetor Merge de Entrada: ");
+	    merge.imprime(vetorMerge);
+	    merge.merge(vetorMerge, 0, vetorMerge.length - 1);
+	    System.out.print("\nVetor Merge Ordenado: ");
+	    merge.imprime(vetorMerge);
+	    System.out.print("\nVetor Bolha de Entrada: ");
+	    bolha.imprime(vetorBolha);
+	    bolha.ordena(vetorBolha);
+	    System.out.print("\nVetor Bolha Ordenado: ");
+	    bolha.imprime(vetorBolha);
+	}
+
+}
