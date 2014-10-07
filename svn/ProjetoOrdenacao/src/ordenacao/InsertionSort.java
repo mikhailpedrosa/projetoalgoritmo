@@ -1,3 +1,4 @@
+package ordenacao;
 
 public class InsertionSort {
 	static int chave, i;
