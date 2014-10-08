@@ -5,7 +5,7 @@
  * Metodos Implementados: Seleção, Bolha, Inserção, Merge, Heap e Quick
  * 
  * */
-
+/*Cliente*/
 import ordenacao.*;
 
 public class Main {
