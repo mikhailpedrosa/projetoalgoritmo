@@ -1,11 +1,11 @@
 /* Projeto da Disciplina de Metodos e Ferramentas de Engenharia de Software - Prof. Taveira - IFCE
- * Curso: Engenharia de Computação
+ * Curso: Engenharia de ComputaÃ§Ã£o
  * Equipe: Daniel e Mikhail
  * 
- * Metodos Implementados: Seleção, Bolha, Inserção, Merge, Heap e Quick
+ * Metodos Implementados: SeleÃ§Ã£o, Bolha, InserÃ§Ã£o, Merge, Heap e Quick
  * 
  * */
-
+/* Servidor */
 import ordenacao.*;
 
 public class Main {
@@ -70,10 +70,10 @@ public class Main {
             
             System.out.println();
             
-            System.out.print("\nVetor Seleção de Entrada: ");
+            System.out.print("\nVetor SeleÃ§Ã£o de Entrada: ");
             SelecaoSort.imprime(vetorSelecao);
             SelecaoSort.ordena(vetorSelecao);
-            System.out.print("\nVetor Seleção de saida: ");
+            System.out.print("\nVetor SeleÃ§Ã£o de saida: ");
             SelecaoSort.imprime(vetorSelecao);
         }
 
