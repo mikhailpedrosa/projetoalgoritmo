@@ -6,7 +6,7 @@
  * 
  * */
 
-/*Cliente*/
+/*Cliente - Ordenação*/
 
 import ordenacao.*;
 
