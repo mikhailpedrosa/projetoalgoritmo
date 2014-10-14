@@ -7,7 +7,7 @@
  * */
 
 
-/*Servidor -  - - - - - - - Ordenação - - - - -- - - Servidor */
+/*Servidor */
 
 
 import ordenacao.*;
