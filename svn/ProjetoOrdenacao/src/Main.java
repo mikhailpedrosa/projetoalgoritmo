@@ -1,20 +1,20 @@
 /* Projeto da Disciplina de Metodos e Ferramentas de Engenharia de Software - Prof. Taveira - IFCE
- * Curso: Engenharia de Computação
+ * Curso: Engenharia de ComputaÃ§Ã£o
  * Equipe: Daniel e Mikhail
  * 
- * Metodos Implementados: Seleção, Bolha, Inserção, Merge, Heap e Quick
+ * Metodos Implementados: SeleÃ§Ã£o, Bolha, InserÃ§Ã£o, Merge, Heap e Quick
  * 
  * */
 
 
-/*Cliente - Ordena��o - */
+/*Servidor - Ordenação - */
 
 
 import ordenacao.*;
 
 
 public class Main {
-        //Função Principal do Projeto Algoritmo @Alteração Servidor
+        //FunÃ§Ã£o Principal do Projeto Algoritmo @AlteraÃ§Ã£o Servidor
         public static int[] vetorMerge = {0, 56, 446, 389, 18, 446, 17, 493, 186, 455,
         94, 374, 119, 81, 250, 496, 84, 129, 73, 414, 156, 199, 84, 17, 16, 56};
         
